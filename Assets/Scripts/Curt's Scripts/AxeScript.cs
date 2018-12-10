@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class AxeScript : MonoBehaviour {
 
-    
    
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    // Update is called once per frame
+    void Update () {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            transform.Rotate(120, 0, 0);
+            transform.Rotate(80, 0, 0);
         }
         if (Input.GetKeyUp(KeyCode.F))
         {
-            transform.Rotate(-120, 0, 0);
+            transform.Rotate(-80, 0, 0);
         }
     }
+   
 }

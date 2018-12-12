@@ -7,8 +7,10 @@ public class ScoreManager : MonoBehaviour {
 
 
     public Text FoodText;
+    public Text StoneText;
 
     public float scoreCount;
+    public float stoneCount;
 
     public bool scoreIncrease;
 
@@ -18,6 +20,7 @@ public class ScoreManager : MonoBehaviour {
     void Update()
     {
         FoodText.text = "Food: " + Mathf.Round(scoreCount);
+        StoneText.text = "Stone: " + Mathf.Round(stoneCount);
     }
 
     public void GiveFish()
@@ -33,8 +36,18 @@ public class ScoreManager : MonoBehaviour {
         AddPoints(1);
     }
 
+    public void GiveStone()
+    {
+        AddStonePoints(1);
+    }
+
     public void AddPoints(int pointsToAdd)
     {
         scoreCount += pointsToAdd;
+    }
+
+    public void AddStonePoints(int stoneToAdd)
+    {
+        stoneCount += stoneToAdd;
     }
 }

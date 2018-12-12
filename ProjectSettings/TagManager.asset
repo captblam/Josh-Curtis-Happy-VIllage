@@ -16,6 +16,8 @@ TagManager:
   - DeerHead
   - DeerRear
   - DearGut
+  - PickAxe
+  - Rock
   layers:
   - Default
   - TransparentFX

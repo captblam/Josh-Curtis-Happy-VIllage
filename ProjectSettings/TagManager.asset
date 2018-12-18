@@ -19,6 +19,7 @@ TagManager:
   - PickAxe
   - Rock
   - Plant
+  - collectRock
   layers:
   - Default
   - TransparentFX

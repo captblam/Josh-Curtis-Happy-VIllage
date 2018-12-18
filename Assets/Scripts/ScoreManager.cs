@@ -13,19 +13,21 @@ public class ScoreManager : MonoBehaviour {
     public float stoneCount;
 
     public bool scoreIncrease;
-
-
+    private PlayerStatusScript psc;
+ 
 
     // Update is called once per frame
     void Update()
     {
         FoodText.text = "Food: " + Mathf.Round(scoreCount);
         StoneText.text = "Stone: " + Mathf.Round(stoneCount);
+        psc = FindObjectOfType<PlayerStatusScript>();
     }
 
     public void GiveFish()
     {
         AddPoints(1);
+        psc.addHealth(2);
     }
     public void GiveDeer()
     {
@@ -50,4 +52,5 @@ public class ScoreManager : MonoBehaviour {
     {
         stoneCount += stoneToAdd;
     }
+
 }

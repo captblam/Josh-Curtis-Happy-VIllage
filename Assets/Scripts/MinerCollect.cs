@@ -9,7 +9,7 @@ public class MinerCollect : MonoBehaviour {
 
     private void Start()
     {
-        scoreHandler = FindObjectOfType<ScoreManager>();
+       
         collect = FindObjectOfType<collectableSpawn>();
     }
 
@@ -17,7 +17,6 @@ public class MinerCollect : MonoBehaviour {
     { 
         if (other.gameObject.CompareTag("Rock"))
         {  
-           //scoreHandler.GiveStone();
            collect.spawnRock();
         }  
     }

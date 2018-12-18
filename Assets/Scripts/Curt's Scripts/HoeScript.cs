@@ -6,7 +6,7 @@ public class HoeScript : MonoBehaviour {
     public GameObject Hoe;
     bool keyHit = false;
     float currLerpTime = 0, LerpTime = 5, perc;
-   [SerializeField] Vector3 currentPos, endPos, position;
+   public Vector3 currentPos, endPos, position;
     private void Start()
     {
         position = transform.position;
@@ -15,11 +15,11 @@ public class HoeScript : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         currentPos = transform.position;
-        if (Input.GetButtonDown("Attack"))
+        if (Input.GetKeyDown("Attack"))
         {
             keyHit = true;
         }
-        if (Input.GetButtonUp("Attack"))
+        if (Input.GetKeyUp("Attack"))
         {
             keyHit = false;
         }

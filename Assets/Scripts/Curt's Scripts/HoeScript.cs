@@ -4,34 +4,29 @@ using UnityEngine;
 
 public class HoeScript : MonoBehaviour {
     public GameObject Hoe;
-    bool keyHit = false;
-    float currLerpTime = 0, LerpTime = 5, perc;
-   public Vector3 currentPos, endPos, position;
+    bool KeyHit = false;
+    private ScoreManager scMan;
     private void Start()
     {
-        position = transform.position;
-        currentPos = transform.position;
+        scMan = GetComponent<ScoreManager>();
+        
     }
     // Update is called once per frame
     void Update () {
-        currentPos = transform.position;
         if (Input.GetKeyDown("Attack"))
         {
-            keyHit = true;
+            KeyHit = true;
         }
         if (Input.GetKeyUp("Attack"))
         {
-            keyHit = false;
+            KeyHit = false;
         }
-        if (keyHit == true)
+    }
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.CompareTag("Plant") && KeyHit == true)
         {
-            currLerpTime += (15 * Time.deltaTime);
-            if (currLerpTime >= LerpTime)
-            {
-                currLerpTime = LerpTime;
-            }
-            perc = currLerpTime / LerpTime;
-            Hoe.transform.position = Vector3.Lerp(currentPos, endPos, perc);
+            scMan.GiveCrop();
         }
     }
 }

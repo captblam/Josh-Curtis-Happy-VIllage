@@ -11,6 +11,7 @@ public class ScoreManager : MonoBehaviour {
 
     public float scoreCount;
     public float stoneCount;
+    public float cropCount;
 
     public bool scoreIncrease;
     private PlayerStatusScript psc;
@@ -42,6 +43,10 @@ public class ScoreManager : MonoBehaviour {
     {
         AddStonePoints(1);
     }
+    public void GiveCrop()
+    {
+        AddCropPoints(1);
+    }
 
     public void AddPoints(int pointsToAdd)
     {
@@ -51,6 +56,11 @@ public class ScoreManager : MonoBehaviour {
     public void AddStonePoints(int stoneToAdd)
     {
         stoneCount += stoneToAdd;
+    }
+
+    public void AddCropPoints(int cropToAdd)
+    {
+        cropCount += cropToAdd;
     }
 
 }

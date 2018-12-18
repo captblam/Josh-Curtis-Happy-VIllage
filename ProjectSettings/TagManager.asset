@@ -18,6 +18,7 @@ TagManager:
   - DearGut
   - PickAxe
   - Rock
+  - Plant
   layers:
   - Default
   - TransparentFX

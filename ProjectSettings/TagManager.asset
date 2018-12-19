@@ -20,6 +20,7 @@ TagManager:
   - Rock
   - Plant
   - collectRock
+  - Destroy
   layers:
   - Default
   - TransparentFX

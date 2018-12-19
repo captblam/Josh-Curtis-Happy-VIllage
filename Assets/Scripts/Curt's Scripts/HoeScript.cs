@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HoeScript : MonoBehaviour {
-    public GameObject Hoe;
-    bool KeyHit = false;
+    
+    bool KeyHit;
     private ScoreManager scMan;
+    private PlantGrowth grow;
     private void Start()
     {
-        scMan = GetComponent<ScoreManager>();
+        scMan = FindObjectOfType<ScoreManager>();
+        
         
     }
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown("Attack"))
+        if (Input.GetButtonDown("Attack"))
         {
             KeyHit = true;
+            Debug.Log("pressed");
         }
-        if (Input.GetKeyUp("Attack"))
+        if (Input.GetButtonUp("Attack"))
         {
             KeyHit = false;
         }
@@ -26,7 +29,9 @@ public class HoeScript : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Plant") && KeyHit == true)
         {
+            grow = col.gameObject.GetComponent<PlantGrowth>();
             scMan.GiveCrop();
+            grow.ResetSize();
         }
     }
 }

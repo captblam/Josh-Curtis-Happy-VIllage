@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTimer: 0
-  timer: 10
+  timer: 2
   maxHeight: 8
   height: 0
   expandTimer: 0
@@ -459,7 +459,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43259148}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTimer: 0
-  timer: 10
+  timer: 2
   maxHeight: 8
   height: 0
   expandTimer: 0
@@ -620,7 +620,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 65264995}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -710,7 +710,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 106288643}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1091,6 +1091,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
@@ -1100,6 +1112,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b1c7f2bf99513db4189f31158bc47826,
     type: 3}
   m_PrefabInternal: {fileID: 143850691}
+--- !u!1 &146712110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1684296038508920, guid: 56c1c092504e83541b7461b14b862bba,
+    type: 2}
+  m_PrefabInternal: {fileID: 1653926603}
 --- !u!1001 &153890387
 Prefab:
   m_ObjectHideFlags: 0
@@ -1140,6 +1157,18 @@ Prefab:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -1223,48 +1252,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4146660387405490, guid: ec799454c89ab9f439895a245334e26f,
     type: 2}
   m_PrefabInternal: {fileID: 963149120}
---- !u!1001 &175715522
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 500.44342
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 458.9573
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4379143253076902, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &186922369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,6 +1382,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
@@ -1469,7 +1468,7 @@ GameObject:
   - component: {fileID: 231597587}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (1)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1688,7 +1687,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241168499}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1904,6 +1903,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
@@ -1941,7 +1952,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 270601458}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2052,11 +2063,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &299518522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1650492436320908, guid: c4a48cd9d809f9e4ea9927d55d3a1b8e,
-    type: 2}
-  m_PrefabInternal: {fileID: 175715522}
 --- !u!1001 &301157793
 Prefab:
   m_ObjectHideFlags: 0
@@ -2097,6 +2103,18 @@ Prefab:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -2233,6 +2251,18 @@ Prefab:
       value: Plant_c_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -2406,7 +2436,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 388223376}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2458,6 +2488,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
@@ -2495,7 +2537,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 395531830}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2618,6 +2660,18 @@ Prefab:
       value: Plant_a_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -2884,7 +2938,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 432301229}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2921,7 +2975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7144795}
   m_AnchorMax: {x: 0.363, y: 0.8163014}
-  m_AnchoredPosition: {x: 8.000015, y: 0.5}
+  m_AnchoredPosition: {x: 8, y: 0.5}
   m_SizeDelta: {x: -11.299988, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435141004
@@ -3194,7 +3248,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 454964030}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3481,7 +3535,7 @@ GameObject:
   - component: {fileID: 489393275}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (1)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3720,7 +3774,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 499070577}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3742,7 +3796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTimer: 0
-  timer: 10
+  timer: 2
   maxHeight: 8
   height: 0
   expandTimer: 0
@@ -3753,7 +3807,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503413236}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3802,6 +3856,18 @@ Prefab:
       value: Plant_a_01 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -3861,7 +3927,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 541084453}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3879,7 +3945,7 @@ GameObject:
   - component: {fileID: 544037434}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (2)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3971,7 +4037,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 556754838}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4205,7 +4271,7 @@ GameObject:
   - component: {fileID: 591826199}
   m_Layer: 0
   m_Name: Plant_c_01_LOD0
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4302,7 +4368,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 596025821}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4584,7 +4650,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 633826757}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4670,6 +4736,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
@@ -4691,7 +4769,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685726286}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4740,6 +4818,18 @@ Prefab:
       value: Plant_h_03 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -4840,7 +4930,7 @@ GameObject:
   - component: {fileID: 704237367}
   m_Layer: 0
   m_Name: BigRoot
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5185,7 +5275,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 758224973}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5531,7 +5621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTimer: 0
-  timer: 10
+  timer: 2
   maxHeight: 8
   height: 0
   expandTimer: 0
@@ -5542,7 +5632,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799888632}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5771,7 +5861,7 @@ GameObject:
   - component: {fileID: 834112482}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (2)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6141,6 +6231,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
@@ -6197,6 +6299,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
@@ -6223,7 +6337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTimer: 0
-  timer: 10
+  timer: 2
   maxHeight: 8
   height: 0
   expandTimer: 0
@@ -6234,7 +6348,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 873478584}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6330,7 +6444,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 885197367}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6622,7 +6736,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 918023553}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6671,6 +6785,18 @@ Prefab:
       value: Plant_d_03 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -6896,6 +7022,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
@@ -6949,6 +7087,18 @@ Prefab:
       value: Plant_g_01 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -7013,6 +7163,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
@@ -7045,8 +7207,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984322409}
-  m_LocalRotation: {x: 0.104079925, y: 0.26865795, z: 0.029214565, w: -0.9571504}
-  m_LocalPosition: {x: -273.1161, y: -7.244784, z: -200.73848}
+  m_LocalRotation: {x: -0.12000268, y: 0.83376026, z: 0.19991745, w: 0.50047594}
+  m_LocalPosition: {x: -317.53372, y: -90.22583, z: -72.37778}
   m_LocalScale: {x: 1.7036831, y: 2.1117601, z: 2.8582573}
   m_Children: []
   m_Father: {fileID: 67557889}
@@ -7211,8 +7373,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015967724}
-  m_LocalRotation: {x: 0.08752661, y: 0.16128956, z: 0.014363385, w: -0.9829133}
-  m_LocalPosition: {x: -272.67316, y: -7.4462023, z: -201.32048}
+  m_LocalRotation: {x: -0.12000268, y: 0.83376026, z: 0.19991745, w: 0.50047594}
+  m_LocalPosition: {x: -317.53372, y: -90.297356, z: -72.37778}
   m_LocalScale: {x: 1.7036831, y: 2.1117601, z: 2.8582573}
   m_Children: []
   m_Father: {fileID: 67557889}
@@ -7313,6 +7475,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
@@ -7366,6 +7540,18 @@ Prefab:
       value: Plant_h_03 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -7682,6 +7868,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
@@ -7759,7 +7957,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1086794882}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -7808,6 +8006,18 @@ Prefab:
       value: Plant_a_01 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -8095,6 +8305,14 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e34db991f89c4764fa6c1bf0b0d58e81, type: 3}
   m_IsPrefabAsset: 0
@@ -8143,6 +8361,18 @@ Prefab:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -8416,7 +8646,7 @@ GameObject:
   - component: {fileID: 1153631625}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (2)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8527,6 +8757,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
@@ -8548,7 +8790,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167519270}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -9160,7 +9402,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1234164070}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -9387,6 +9629,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
@@ -9525,6 +9779,18 @@ Prefab:
       value: Plant_b_02 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -9757,7 +10023,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1322520871}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -9889,6 +10155,18 @@ Prefab:
       value: Plant_h_03 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba3bae5ed4007eb4bb5ba1cbd1238406, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -10065,7 +10343,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1349175617}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10114,6 +10392,18 @@ Prefab:
       value: Plant_b_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -10265,6 +10555,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
@@ -10274,6 +10576,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 39d247d4d6b1741459e06c618bb1d751,
     type: 3}
   m_PrefabInternal: {fileID: 1368511141}
+--- !u!1 &1375669163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1727194341359038, guid: 56c1c092504e83541b7461b14b862bba,
+    type: 2}
+  m_PrefabInternal: {fileID: 1653926603}
+--- !u!114 &1375669165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1375669163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a288361634dda244cb469d02dc417c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1378230997 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5,
@@ -10493,7 +10811,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1417763175}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10605,7 +10923,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434637708}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10623,7 +10941,7 @@ GameObject:
   - component: {fileID: 1443009255}
   m_Layer: 0
   m_Name: Plant_c_01_LOD0
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10710,8 +11028,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1448288530}
-  m_LocalRotation: {x: 0.17428346, y: 0.0832396, z: 0.014788219, w: -0.9810595}
-  m_LocalPosition: {x: -270.49887, y: -8.601046, z: -205.28517}
+  m_LocalRotation: {x: -0.12000268, y: 0.83376026, z: 0.19991745, w: 0.50047594}
+  m_LocalPosition: {x: -317.53372, y: -90.297356, z: -72.37778}
   m_LocalScale: {x: 1.7036831, y: 2.1117601, z: 2.8582573}
   m_Children: []
   m_Father: {fileID: 67557889}
@@ -10793,7 +11111,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1452523677}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10826,7 +11144,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1458700048}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10875,6 +11193,18 @@ Prefab:
       value: Plant_d_03 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -10976,6 +11306,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b1c7f2bf99513db4189f31158bc47826, type: 3}
@@ -11013,7 +11355,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478139722}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11046,7 +11388,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1500112704}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11064,7 +11406,7 @@ GameObject:
   - component: {fileID: 1500631498}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (1)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11225,7 +11567,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510025152}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11270,6 +11612,18 @@ Prefab:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -11398,7 +11752,7 @@ GameObject:
   - component: {fileID: 1542944616}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (2)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11787,7 +12141,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1617839628}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11836,6 +12190,18 @@ Prefab:
       value: Plant_g_01 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
@@ -12057,6 +12423,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1641099811}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1653926603
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 499.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.394
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 460.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176220895178274, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65216554215215950, guid: 56c1c092504e83541b7461b14b862bba,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56c1c092504e83541b7461b14b862bba, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &1654657706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 843740dbe549a4a6ba9556d1b80001f5,
@@ -12303,6 +12716,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
@@ -12526,7 +12951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTimer: 0
-  timer: 10
+  timer: 2
   maxHeight: 8
   height: 0
   expandTimer: 0
@@ -12537,7 +12962,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706528966}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -12552,7 +12977,7 @@ GameObject:
   - component: {fileID: 1717244185}
   m_Layer: 0
   m_Name: MedicalHerb
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12623,6 +13048,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
@@ -12660,7 +13097,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738612914}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -12693,7 +13130,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741132278}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -12802,7 +13239,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745057141}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -12817,7 +13254,7 @@ GameObject:
   - component: {fileID: 1760615958}
   m_Layer: 0
   m_Name: Onion
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12990,6 +13427,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
@@ -13099,7 +13548,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1787288878}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -13314,6 +13763,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
@@ -13370,6 +13831,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ebe276cc4d306094bac61c949bd3357f, type: 3}
@@ -13407,7 +13880,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808694642}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -13424,7 +13897,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1809332453}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -13559,6 +14032,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
@@ -13596,7 +14081,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854615454}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -13648,6 +14133,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39d247d4d6b1741459e06c618bb1d751, type: 3}
@@ -13670,7 +14167,7 @@ GameObject:
   - component: {fileID: 1861482126}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (1)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13849,7 +14346,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1880226937}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -14010,7 +14507,7 @@ Prefab:
         type: 2}
       propertyPath: characters.Array.data[4]
       value: 
-      objectReference: {fileID: 299518522}
+      objectReference: {fileID: 146712110}
     - target: {fileID: 114661546621664422, guid: 691632e237fa9864ba36476dd4810e87,
         type: 2}
       propertyPath: characters.Array.data[5]
@@ -14344,7 +14841,7 @@ GameObject:
   - component: {fileID: 1910299084}
   m_Layer: 0
   m_Name: Carrot
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14388,7 +14885,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1921977959}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -14440,6 +14937,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
@@ -14462,7 +14971,7 @@ GameObject:
   - component: {fileID: 1932127740}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (2)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14587,7 +15096,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945392034}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -14647,6 +15156,24 @@ Prefab:
     - target: {fileID: 4722377576438826, guid: be67a35fbe60a0d42ac2a899824d1fd8, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.4999868
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400938916956162, guid: be67a35fbe60a0d42ac2a899824d1fd8, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736674755725610, guid: be67a35fbe60a0d42ac2a899824d1fd8, type: 2}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 64612124330583784, guid: be67a35fbe60a0d42ac2a899824d1fd8,
+        type: 2}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64612124330583784, guid: be67a35fbe60a0d42ac2a899824d1fd8,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be67a35fbe60a0d42ac2a899824d1fd8, type: 2}
@@ -14839,7 +15366,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2015592173}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -15150,6 +15677,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
@@ -15172,7 +15711,7 @@ GameObject:
   - component: {fileID: 2071500263}
   m_Layer: 0
   m_Name: Plant_c_01_LOD1 (1)
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15301,7 +15840,7 @@ GameObject:
   - component: {fileID: 2088445620}
   m_Layer: 0
   m_Name: Plant_c_01_LOD0
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15412,6 +15951,18 @@ Prefab:
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 20500000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83b754bd08f5a1242a0bc7fcbb954106, type: 3}
@@ -15449,7 +16000,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2124566405}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -15494,6 +16045,18 @@ Prefab:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: de2a6bc51f2a125458f8bed9cb2b8ee3, type: 3}
       propertyPath: m_TagString
       value: Plant
       objectReference: {fileID: 0}

@@ -9,6 +9,7 @@ public class PlantGrowth : MonoBehaviour {
 	void Start () {
         growthTimer = timer;
         expandTimer = timer * 2;
+        
 	}
 	
 	// Update is called once per frame
@@ -27,9 +28,17 @@ public class PlantGrowth : MonoBehaviour {
         }
         if(expandTimer <= 0 && height != maxHeight)
         {
-            transform.localScale += new Vector3(.3f, 0, .3f);
-            expandTimer = timer * 2;
+           // transform.localScale += new Vector3(.3f, 0, .3f);
+           // expandTimer = timer * 2;
            
         }
+    }
+    public void ResetSize()
+    {
+        for(int i = 0; i < height; height--)
+        {
+            transform.localScale += new Vector3(0, -.1f, 0);
+        }
+       
     }
 }

@@ -46,6 +46,7 @@ public class ScoreManager : MonoBehaviour {
     public void GiveCrop()
     {
         AddCropPoints(1);
+        AddPoints(1);
     }
 
     public void AddPoints(int pointsToAdd)

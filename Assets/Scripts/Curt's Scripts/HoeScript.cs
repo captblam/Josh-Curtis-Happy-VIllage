@@ -18,14 +18,24 @@ public class HoeScript : MonoBehaviour {
         if (Input.GetButtonDown("Attack"))
         {
             KeyHit = true;
-            Debug.Log("pressed");
+            //Debug.Log("pressed");
         }
         if (Input.GetButtonUp("Attack"))
         {
             KeyHit = false;
+            Debug.Log("Attacked");
         }
     }
-    private void OnTriggerEnter(Collider col)
+    //private void OnTriggerEnter(Collider col)
+    //{
+    //    if (col.gameObject.CompareTag("Plant") && KeyHit == true)
+    //    {
+    //        grow = col.gameObject.GetComponent<PlantGrowth>();
+    //        scMan.GiveCrop();
+    //        grow.ResetSize();
+    //    }
+    //}
+    private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Plant") && KeyHit == true)
         {

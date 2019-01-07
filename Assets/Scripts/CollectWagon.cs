@@ -17,6 +17,7 @@ public class CollectWagon : MonoBehaviour {
         {
             scoreHandler.GiveStone();
             Destroy(other.gameObject);
+
         }  
     }
 }

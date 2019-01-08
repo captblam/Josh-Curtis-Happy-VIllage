@@ -28,12 +28,12 @@ public class FishingSpear : MonoBehaviour {
         //{
         //    transform.position = goBack;
         //}
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             transform.Rotate(120, 0, 0);
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.F))
         {
             transform.Rotate(-120, 0, 0);
         }

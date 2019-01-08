@@ -21,6 +21,7 @@ TagManager:
   - Plant
   - collectRock
   - Destroy
+  - Head
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - PostProcessing
   - deadfish
   - spear
-  - 
+  - head
   - 
   - 
   - 

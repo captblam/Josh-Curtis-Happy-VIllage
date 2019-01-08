@@ -10,8 +10,7 @@ public class HoeScript : MonoBehaviour {
     private void Start()
     {
         scMan = FindObjectOfType<ScoreManager>();
-        
-        
+  
     }
     // Update is called once per frame
     void Update () {
@@ -26,16 +25,7 @@ public class HoeScript : MonoBehaviour {
             Debug.Log("Attacked");
         }
     }
-    //private void OnTriggerEnter(Collider col)
-    //{
-    //    if (col.gameObject.CompareTag("Plant") && KeyHit == true)
-    //    {
-    //        grow = col.gameObject.GetComponent<PlantGrowth>();
-    //        scMan.GiveCrop();
-    //        grow.ResetSize();
-    //    }
-    //}
-    private void OnCollisionEnter(Collision col)
+    private void OnTriggerStay(Collider col)
     {
         if (col.gameObject.CompareTag("Plant") && KeyHit == true)
         {
@@ -44,4 +34,9 @@ public class HoeScript : MonoBehaviour {
             grow.ResetSize();
         }
     }
+
+    //private void OnTriggerEnter(Collider col)
+    //{
+       
+    //}
 }

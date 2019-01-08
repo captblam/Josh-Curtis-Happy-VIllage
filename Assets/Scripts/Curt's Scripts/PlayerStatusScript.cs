@@ -59,6 +59,7 @@ public class PlayerStatusScript : MonoBehaviour {
         {
             Debug.Log("DED!");
             Community--;
+            Destroy(gameObject);
         }
     }
    

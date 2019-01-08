@@ -31,8 +31,13 @@ public class PlayerStatusScript : MonoBehaviour {
     {
        if(HpTimer <= 0)
         {
-            Health -= HpLost + Hunger; //+ Thirst + Comfort;
-            HpTimer = timer;
+            
+            if (Hunger > 0)
+            {
+                Health -= HpLost; //+ Thirst + Comfort;
+                HpTimer = timer;
+            }
+            
         }
     }
     void PlayerHunger()
@@ -66,7 +71,7 @@ public class PlayerStatusScript : MonoBehaviour {
     }
     public void addHealth(int pointsToGive)
     {
-        Health += pointsToGive;
-        Debug.Log("I Ate 10 fish");
+        Hunger--;
+        Debug.Log("I Ate fish");
     }
 }

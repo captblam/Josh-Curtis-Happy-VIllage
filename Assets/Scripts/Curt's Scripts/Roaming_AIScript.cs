@@ -11,8 +11,8 @@ public class Roaming_AIScript : MonoBehaviour {
     Vector3 currentPos, randomPos;
     public GameObject obj;
     Rigidbody rb;
-    [SerializeField] float  grazeTimer, acceptRange, wanderRadius;
-    float timerReset;
+    [SerializeField] float  grazeTimer, acceptRange, wanderRadius, MoveTimer;
+    float timerReset, timer2;
     bool isActive = false;
     NavMeshAgent smith;
     [SerializeField] GameObject[] spawnLocations;
@@ -24,7 +24,7 @@ public class Roaming_AIScript : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
-
+        timer2 = MoveTimer;
         currentHP = HP;
         sMan = FindObjectOfType<ScoreManager>();
         smith = GetComponent<NavMeshAgent>();
@@ -124,5 +124,13 @@ public class Roaming_AIScript : MonoBehaviour {
     {
         rb.velocity = Vector3.zero;
         Debug.Log("MA ASS!");
+    }
+    void Stuck()
+    {
+        if(MoveTimer <= 0)
+        {
+            Roam();
+        }
+        MoveTimer = timer2;
     }
 }

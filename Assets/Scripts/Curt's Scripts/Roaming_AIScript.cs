@@ -36,6 +36,7 @@ public class Roaming_AIScript : MonoBehaviour {
     }
     private void Update()
     {
+        
         ded();
     }
 
@@ -62,7 +63,7 @@ public class Roaming_AIScript : MonoBehaviour {
         {
             isActive = true;
             smith.SetDestination(randomPos);
-
+            MoveTimer -= Time.deltaTime;
         }
         else isActive = false;
         Grazing(); 

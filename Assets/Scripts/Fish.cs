@@ -8,17 +8,19 @@ public class Fish : MonoBehaviour
 {
     Vector3 currentPos, RandomPos;
     public GameObject ogj;
-    [SerializeField] float SwimRadius, acceptedRange, StopTimer;
+    [SerializeField] float SwimRadius, acceptedRange, StopTimer, MoveTimer;
     NavMeshAgent NavMesh;
 
     public bool isActive = false;
-    float timerReset;
+    float timerReset, timer2;
 
     Rigidbody Body;
 
 
     private void Start()
     {
+        
+        timer2 = MoveTimer;
         NavMesh = GetComponent<NavMeshAgent>();
         currentPos = gameObject.transform.position;
         RandomPos = GetNewLocation();
@@ -47,6 +49,7 @@ public class Fish : MonoBehaviour
         {
             isActive = true;
             NavMesh.SetDestination(RandomPos);
+            MoveTimer -= Time.deltaTime;
         }
         else isActive = false;
         {
@@ -69,8 +72,20 @@ public class Fish : MonoBehaviour
             }
         }
     }
+
+    void Stuck()
+    {
+       
+        if (MoveTimer <= 0)
+        {
+            GetNewLocation();
+            NavMesh.SetDestination(RandomPos);
+        }
+        MoveTimer = timer2;
+    }
+
     private void Update()
     {
-        transform.Rotate(90, 0, 0);
+        Stuck();
     }
 }

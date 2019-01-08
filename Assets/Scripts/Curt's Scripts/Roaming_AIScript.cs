@@ -36,7 +36,7 @@ public class Roaming_AIScript : MonoBehaviour {
     }
     private void Update()
     {
-        
+        Stuck();
         ded();
     }
 

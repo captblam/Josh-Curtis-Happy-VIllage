@@ -6,13 +6,14 @@ public class PlayerStatusScript : MonoBehaviour {
 
     [SerializeField]int Health = 20, Hunger = 0, Thirst = 0, Comfort = 0, HpLost = 1, Community = 2;
     [SerializeField] float HpTimer, HungerTimer, ThirstTimer, ComfortTimer, timer = 6;
-
+    
 	// Use this for initialization
 	void Start () {
         HpTimer = timer;
         HungerTimer = timer * 4;
         ThirstTimer = timer * 2;
         ComfortTimer = timer * 8;
+        
 	}
 	
 	// Update is called once per frame
@@ -21,19 +22,15 @@ public class PlayerStatusScript : MonoBehaviour {
         HungerTimer -= Time.deltaTime;
         ThirstTimer -= Time.deltaTime;
         ComfortTimer -= Time.deltaTime;
-        PlayerHp();
+        //PlayerHp();
         PlayerHunger();
         //PlayerThirst();
         //PlayerComfort();
         Ded();
     }
-    void PlayerHp()
+    public void PlayerHp()
     {
-       if(HpTimer <= 0)
-        {
-            Health -= HpLost + Hunger; //+ Thirst + Comfort;
-            HpTimer = timer;
-        }
+        Health -= HpLost;
     }
     void PlayerHunger()
     {
@@ -64,9 +61,5 @@ public class PlayerStatusScript : MonoBehaviour {
             Community--;
         }
     }
-    public void addHealth(int pointsToGive)
-    {
-        Health += pointsToGive;
-        Debug.Log("I Ate 10 fish");
-    }
+   
 }

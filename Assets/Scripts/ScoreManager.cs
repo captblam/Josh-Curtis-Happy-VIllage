@@ -15,11 +15,16 @@ public class ScoreManager : MonoBehaviour {
 
     public bool scoreIncrease;
     private PlayerStatusScript psc;
- 
 
+    [SerializeField] float HpTimer, timer = 6;
+    private void Start()
+    {
+        HpTimer = timer;
+    }
     // Update is called once per frame
     void Update()
     {
+        HpTimer -= Time.deltaTime;
         FoodText.text = "Food: " + Mathf.Round(scoreCount);
         StoneText.text = "Stone: " + Mathf.Round(stoneCount);
         psc = FindObjectOfType<PlayerStatusScript>();
@@ -28,7 +33,7 @@ public class ScoreManager : MonoBehaviour {
     public void GiveFish()
     {
         AddPoints(1);
-        psc.addHealth(2);
+        
     }
     public void GiveDeer()
     {
@@ -45,7 +50,7 @@ public class ScoreManager : MonoBehaviour {
     }
     public void GiveCrop()
     {
-        AddCropPoints(1);
+        //AddCropPoints(1);
         AddPoints(1);
     }
 
@@ -62,6 +67,18 @@ public class ScoreManager : MonoBehaviour {
     public void AddCropPoints(int cropToAdd)
     {
         cropCount += cropToAdd;
+    }
+    void Eat()
+    {
+        if(HpTimer <= 0 && scoreCount > 0)
+        {
+            scoreCount--;
+        }else if(HpTimer <= 0 && scoreCount <= 0)
+        {
+            psc.PlayerHp();
+        }
+       
+
     }
 
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 
 
 
-public class SpearThrowingScript : MonoBehaviour {
+public class SpearThrowingScript : AttackBehaviour {
+
     public GameObject obj, SpawnLoc;
     int maxSpearsOnScreen = 1;
     Vector3 spawn;
@@ -13,6 +14,7 @@ public class SpearThrowingScript : MonoBehaviour {
     Ray Target;
     Vector3 speartarget;
     Rigidbody rb;
+
     // Use this for initialization
     void Start () {
         rot = SpawnLoc.transform.rotation;
@@ -20,19 +22,13 @@ public class SpearThrowingScript : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
     }
 	
-	
     private void FixedUpdate()
     {
         rot = SpawnLoc.transform.rotation;
         spawn = SpawnLoc.transform.position;
     }
-    void Update()
-    {
-        SpawnSpear();
-    }
-   
-    
-    void SpawnSpear()
+  
+    public override void Run()
     {
         if (Input.GetButtonDown("Attack") && gameManager.instance.getControlled().name == gameObject.name)
         {
@@ -44,7 +40,4 @@ public class SpearThrowingScript : MonoBehaviour {
             spear.GetComponent<Rigidbody>().velocity = rb.velocity;
         }
     }
-
-   
- 
 }

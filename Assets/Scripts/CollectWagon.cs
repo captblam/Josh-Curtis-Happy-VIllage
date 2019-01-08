@@ -19,10 +19,11 @@ public class CollectWagon : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("collectRock"))
         {
-            scoreHandler.GiveStone();
+
             if(RockNum < Rocks.Count)
             {
                 RockNum++;
+                scoreHandler.GiveStone();
             }
             
             Rck();

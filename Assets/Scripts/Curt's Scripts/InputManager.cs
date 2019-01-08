@@ -38,6 +38,15 @@ public class InputManager : MonoBehaviour {
     private void Update()
     {
         PlayerMovement();
+        
+        if (!objectToControl.GetComponentInChildren<AttackBehaviour>())
+        {
+            Debug.Log("Attack Behaviour Failed");
+        }
+        else
+        {
+            objectToControl.GetComponentInChildren<AttackBehaviour>().Run();
+        }
     }
     
     void PlayerMovement()

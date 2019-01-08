@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HoeScript : MonoBehaviour {
+public class HoeScript : AttackBehaviour {
     
     bool KeyHit;
     private ScoreManager scMan;
@@ -10,10 +10,20 @@ public class HoeScript : MonoBehaviour {
     private void Start()
     {
         scMan = FindObjectOfType<ScoreManager>();
-  
     }
-    // Update is called once per frame
-    void Update () {
+  
+    private void OnTriggerStay(Collider col)
+    {
+        if (col.gameObject.CompareTag("Plant") && KeyHit == true)
+        {
+            grow = col.gameObject.GetComponent<PlantGrowth>();
+            scMan.GiveCrop();
+            grow.ResetSize();
+        }
+    }
+
+    public override void Run()
+    {
         if (Input.GetButtonDown("Attack"))
         {
             KeyHit = true;
@@ -25,18 +35,4 @@ public class HoeScript : MonoBehaviour {
             Debug.Log("Attacked");
         }
     }
-    private void OnTriggerStay(Collider col)
-    {
-        if (col.gameObject.CompareTag("Plant") && KeyHit == true)
-        {
-            grow = col.gameObject.GetComponent<PlantGrowth>();
-            scMan.GiveCrop();
-            grow.ResetSize();
-        }
-    }
-
-    //private void OnTriggerEnter(Collider col)
-    //{
-       
-    //}
 }

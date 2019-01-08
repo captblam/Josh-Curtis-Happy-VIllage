@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AxeScript : MonoBehaviour {
+public class AxeScript : AttackBehaviour {
 
-   
-    // Update is called once per frame
-    void Update () {
+    public override void Run()
+    {
         if (Input.GetKeyDown(KeyCode.F))
         {
             transform.Rotate(80, 0, 0);
@@ -16,5 +15,4 @@ public class AxeScript : MonoBehaviour {
             transform.Rotate(-80, 0, 0);
         }
     }
-   
 }

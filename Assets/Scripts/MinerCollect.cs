@@ -8,8 +8,7 @@ public class MinerCollect : MonoBehaviour {
     private collectableSpawn collect;
 
     private void Start()
-    {
-       
+    { 
         collect = FindObjectOfType<collectableSpawn>();
     }
 

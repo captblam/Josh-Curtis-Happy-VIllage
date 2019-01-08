@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CollectWagon : MonoBehaviour {
 
-    private ScoreManager scoreHandler;
-    private int RockNum = 0;
+    [SerializeField]private ScoreManager scoreHandler;
+    [SerializeField]private int RockNum = 0;
     [SerializeField]private List<GameObject> Rocks = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
-        scoreHandler = FindObjectOfType<ScoreManager>();
+        scoreHandler = GameObject.FindObjectOfType<ScoreManager>();
         Rck();
     }
    
@@ -20,9 +20,13 @@ public class CollectWagon : MonoBehaviour {
         if (other.gameObject.CompareTag("collectRock"))
         {
             scoreHandler.GiveStone();
-            Destroy(other.gameObject);
-            RockNum++;
+            if(RockNum < Rocks.Count)
+            {
+                RockNum++;
+            }
+            
             Rck();
+            Destroy(other.gameObject);
         }  
     }
     void Rck()

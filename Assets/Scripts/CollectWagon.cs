@@ -11,8 +11,9 @@ public class CollectWagon : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         scoreHandler = FindObjectOfType<ScoreManager>();
-        
+        Rck();
     }
+   
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,30 +22,31 @@ public class CollectWagon : MonoBehaviour {
             scoreHandler.GiveStone();
             Destroy(other.gameObject);
             RockNum++;
-            
+            Rck();
         }  
     }
     void Rck()
     {
-        if (RockNum >= 3)
+        switch (RockNum)
         {
-
-        }
-        else if (RockNum >= 5)
-        {
-
-        }
-        else if (RockNum >= 7)
-        {
-
-        }
-        else if (RockNum >= 10)
-        {
-
-        }
-        else
-        {
-
+            case 1:
+                Rocks[0].SetActive(true);
+                break;
+            case 2:
+                Rocks[1].SetActive(true);
+                break;
+            case 3:
+                Rocks[2].SetActive(true);
+                break;
+            case 4:
+                Rocks[3].SetActive(true);
+                break;
+            default:
+                foreach  (GameObject pile in Rocks)
+                {
+                    pile.SetActive(false);
+                }
+                break;
         }
     }
 }

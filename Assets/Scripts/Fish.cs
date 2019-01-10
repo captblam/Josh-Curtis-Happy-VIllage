@@ -16,17 +16,14 @@ public class Fish : MonoBehaviour
 
     Rigidbody Body;
 
-
     private void Start()
-    {
-        
+    {    
         timer2 = MoveTimer;
         NavMesh = GetComponent<NavMeshAgent>();
         currentPos = gameObject.transform.position;
         RandomPos = GetNewLocation();
         Body = GetComponent<Rigidbody>();
         timerReset = StopTimer;
-       
     }
 
     private void FixedUpdate()
@@ -73,9 +70,8 @@ public class Fish : MonoBehaviour
         }
     }
 
-    void Stuck()
+    public void Stuck()
     {
-       
         if (MoveTimer <= 0)
         {
             GetNewLocation();

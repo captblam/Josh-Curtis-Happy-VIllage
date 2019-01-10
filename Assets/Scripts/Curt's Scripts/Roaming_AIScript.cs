@@ -19,6 +19,7 @@ public class Roaming_AIScript : MonoBehaviour {
     AnimalSpawn animalSpawn;
     int HP = 10;
     int currentHP;
+    Fish fi;
    
     private ScoreManager sMan;
     
@@ -27,6 +28,7 @@ public class Roaming_AIScript : MonoBehaviour {
         timer2 = MoveTimer;
         currentHP = HP;
         sMan = FindObjectOfType<ScoreManager>();
+        fi = FindObjectOfType<Fish>();
         smith = GetComponent<NavMeshAgent>();
         timerReset = grazeTimer;
         currentPos = gameObject.transform.position;
@@ -36,7 +38,7 @@ public class Roaming_AIScript : MonoBehaviour {
     }
     private void Update()
     {
-        Stuck();
+        fi.Stuck();
         ded();
     }
 
@@ -126,12 +128,13 @@ public class Roaming_AIScript : MonoBehaviour {
         rb.velocity = Vector3.zero;
         Debug.Log("MA ASS!");
     }
-    void Stuck()
-    {
-        if(MoveTimer <= 0)
-        {
-            Roam();
-        }
-        MoveTimer = timer2;
-    }
+    //void Stuck()
+    //{
+    //    if(MoveTimer <= 0)
+    //    {
+    //        Roam();
+    //    }
+    //    MoveTimer = timer2;
+    //}
+
 }

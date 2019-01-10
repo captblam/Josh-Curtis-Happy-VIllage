@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 54117589710391542}
   - component: {fileID: 114486439360701762}
   - component: {fileID: 114389252230822582}
+  - component: {fileID: 65297457963654478}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Untagged
@@ -353,6 +354,18 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &65297457963654478
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128713702599688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114389252230822582
 MonoBehaviour:
   m_ObjectHideFlags: 1

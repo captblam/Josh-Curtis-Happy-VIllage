@@ -455,10 +455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e57060a686304548b1e6ba87bcb760f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  welcomeImage: {fileID: 2800000, guid: 6b249501b1416f94e91d11e6d6682369, type: 3}
-  image: {fileID: 2800000, guid: 03ba0e85ed41a0144b21933396e949ae, type: 3}
-  image1: {fileID: 2800000, guid: d6c053b1a62bb0248a79ffb5e5a72351, type: 3}
-  image2: {fileID: 2800000, guid: 8819261ea53427d43a5e4ae7d5a77c0f, type: 3}
+  image: {fileID: 2800000, guid: 0674667b69351674dbe6548c70e5ff14, type: 3}
+  image1: {fileID: 2800000, guid: 540a5491d5c4cb4499c2eb1234ab0416, type: 3}
 --- !u!1 &11994866
 GameObject:
   m_ObjectHideFlags: 0

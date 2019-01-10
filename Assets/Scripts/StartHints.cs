@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class StartHints : MonoBehaviour {
 
-    public Texture2D welcomeImage;
+    
     public Texture2D image;
     public Texture2D image1;
-    public Texture2D image2;
     private int countDownTimerDelay;
     private int countDownTimerStartTime;
 
-    public static float startTimer, timer = 5;
+    public static float startTimer, timer = 2;
 
     public static StartHints Instance { get { return Instance;  } }
     private static StartHints instance = null;
@@ -31,7 +30,7 @@ public class StartHints : MonoBehaviour {
     {
         if (startTimer >= 0)
         {
-            Time.timeScale = 0.5f;
+            Time.timeScale = 0.1f;
             Debug.Log("Slow time");
         }
         else
@@ -52,12 +51,12 @@ public class StartHints : MonoBehaviour {
         {
             instance = null;
         }
-        countdownTimerReset(3);
+        countdownTimerReset(2);
     }
 
     private void OnGUI()
     {
-        GUILayout.Label(CountdownTimerImage());
+        //GUILayout.Label(CountdownTimerImage());
         GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
         GUILayout.FlexibleSpace();
         GUILayout.BeginHorizontal();
@@ -73,14 +72,10 @@ public class StartHints : MonoBehaviour {
     {
         switch (coutdownTimerSecondsRemaining())
         {
-            case 0:
-                return image2;
             case 1:
-                return image1 ;
+                return image ;
             case 2:
-                return image;
-            case 3:
-                return welcomeImage;
+                return image1;
             default:
                 return null;
         }

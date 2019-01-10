@@ -9,6 +9,7 @@ public class StartHints : MonoBehaviour {
     public Texture2D image1;
     private int countDownTimerDelay;
     private int countDownTimerStartTime;
+    public GameObject startHintsScript;
 
     public static float startTimer, timer = 2;
 
@@ -17,7 +18,7 @@ public class StartHints : MonoBehaviour {
 
     private void Start()
     {
-        startTimer = timer;    
+        startTimer = timer;
     }
 
     private void Update()
@@ -25,7 +26,7 @@ public class StartHints : MonoBehaviour {
         startTimer -= Time.deltaTime;
         beginTime();
     }
-
+    
     void beginTime()
     {
         if (startTimer >= 0)
@@ -33,10 +34,12 @@ public class StartHints : MonoBehaviour {
             Time.timeScale = 0.1f;
             Debug.Log("Slow time");
         }
-        else
+        else if (startTimer <= 0 || Input.GetKeyDown(key: KeyCode.KeypadEnter))
         {
             Time.timeScale = 1f;
             Debug.Log("fast time");
+            startHintsScript.SetActive(false);
+            timer = 0;
         }
     }
 

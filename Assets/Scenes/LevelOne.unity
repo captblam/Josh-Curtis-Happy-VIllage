@@ -457,6 +457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: 0674667b69351674dbe6548c70e5ff14, type: 3}
   image1: {fileID: 2800000, guid: 540a5491d5c4cb4499c2eb1234ab0416, type: 3}
+  startHintsScript: {fileID: 11723451}
 --- !u!1 &11994866
 GameObject:
   m_ObjectHideFlags: 0
@@ -15815,8 +15816,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984322409}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -533.7471, y: 16.05847, z: -1417.0803}
+  m_LocalRotation: {x: -0.22825234, y: 0.24832007, z: 0.060332134, w: 0.9394669}
+  m_LocalPosition: {x: -1824.1411, y: -20.053654, z: -187.41618}
   m_LocalScale: {x: 1.7036831, y: 2.1117601, z: 2.8582573}
   m_Children: []
   m_Father: {fileID: 67557889}
@@ -16325,8 +16326,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015967724}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -533.7471, y: 15.986948, z: -1417.0803}
+  m_LocalRotation: {x: -0.22953749, y: 0.27059507, z: 0.06660439, w: 0.9325528}
+  m_LocalPosition: {x: -1824.1411, y: -20.12518, z: -187.41618}
   m_LocalScale: {x: 1.7036831, y: 2.1117601, z: 2.8582573}
   m_Children: []
   m_Father: {fileID: 67557889}
@@ -24389,8 +24390,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1448288530}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -533.7471, y: 15.986948, z: -1417.0803}
+  m_LocalRotation: {x: -0.22953749, y: 0.27059507, z: 0.06660439, w: 0.9325528}
+  m_LocalPosition: {x: -1824.1411, y: -20.12518, z: -187.41618}
   m_LocalScale: {x: 1.7036831, y: 2.1117601, z: 2.8582573}
   m_Children: []
   m_Father: {fileID: 67557889}
@@ -24444,6 +24445,47 @@ Skybox:
   m_GameObject: {fileID: 1448288530}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 0}
+--- !u!1 &1450118898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450118899}
+  - component: {fileID: 1450118900}
+  m_Layer: 0
+  m_Name: MineTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450118899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1450118898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.2, y: 2.39, z: 634.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1450118900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1450118898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.4627285, z: 9.450867}
+  m_Center: {x: 0, y: -0.33064246, z: 1.6902771}
 --- !u!1 &1452523677 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 39d247d4d6b1741459e06c618bb1d751,

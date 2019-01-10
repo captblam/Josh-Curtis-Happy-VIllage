@@ -17,6 +17,8 @@ public class ScoreManager : MonoBehaviour {
     private PlayerStatusScript psc;
 
     [SerializeField] float HpTimer, timer = 6;
+    [SerializeField] private List<GameObject> villagers = new List<GameObject>();
+
     private void Start()
     {
         HpTimer = timer;
@@ -24,10 +26,11 @@ public class ScoreManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        HpTimer -= Time.deltaTime;
+        //HpTimer -= Time.deltaTime;
         FoodText.text = "Food: " + Mathf.Round(scoreCount);
         StoneText.text = "Stone: " + Mathf.Round(stoneCount);
         psc = FindObjectOfType<PlayerStatusScript>();
+        //Eat();
     }
 
     public void GiveFish()
@@ -68,16 +71,18 @@ public class ScoreManager : MonoBehaviour {
     {
         cropCount += cropToAdd;
     }
-    void Eat()
+    public void Eat()
     {
-        if(HpTimer <= 0 && scoreCount > 0)
+        if(scoreCount > 0)
         {
-            scoreCount--;
-        }else if(HpTimer <= 0 && scoreCount <= 0)
+            scoreCount -= 1;           
+        }
+        if (scoreCount == 0)
         {
             psc.PlayerHp();
+            Debug.Log("took damage");
         }
-       
+        
 
     }
 

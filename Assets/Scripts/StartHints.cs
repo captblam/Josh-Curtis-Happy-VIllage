@@ -34,12 +34,11 @@ public class StartHints : MonoBehaviour {
             Time.timeScale = 0.1f;
             Debug.Log("Slow time");
         }
-        else if (startTimer <= 0 || Input.GetKeyDown(key: KeyCode.KeypadEnter))
+        else if (startTimer <= 0)
         {
             Time.timeScale = 1f;
             Debug.Log("fast time");
-            startHintsScript.SetActive(false);
-            timer = 0;
+            startHintsScript.SetActive(false);           
         }
     }
 
